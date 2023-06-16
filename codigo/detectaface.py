@@ -4,7 +4,6 @@ from ultralytics import YOLO
 
 input_video = cv2.VideoCapture('./assets/arsene.mp4')
 
-
 if not input_video.isOpened():
     print("Error opening video file")
     exit(1)
@@ -44,7 +43,7 @@ while True:
             )
 
    
-    cv2.imshow('Video Playback', frame)
+    cv2.imshow('Detecta Faces', frame)
     output_video.write(frame)
 
 
